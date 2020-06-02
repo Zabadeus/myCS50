@@ -1,0 +1,11 @@
+$color: rgb(75, 59, 59);
+
+div {
+  font-size: 18px;
+  color: $color;
+
+  ul {
+      color: $color;
+      list-style-type: circle;
+  }
+}

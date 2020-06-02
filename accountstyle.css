@@ -1,0 +1,11 @@
+.section {
+  background-color: #f7f5f2;
+  padding: 20px;
+  border: 20px;
+}
+
+#Creator, #Customer {
+  background-color: #f5f0e4;
+}
+
+/*# sourceMappingURL=accountstyle.css.map */

@@ -1,0 +1,30 @@
+.section {
+    background-color: rgb(255, 252, 247);
+    padding: 20px;
+    border: 20px;
+  }
+
+table {
+      text-align: center;
+      border-collapse: collapse;
+      background: rgb(241, 239, 234);
+  }
+.row1 {
+    background-color: rgb(166, 224, 143);
+}
+.row2 {
+    background: rgb(236, 235, 160);
+}
+.row3 {
+    background: rgb(236, 212, 160);
+}
+.row4 {
+    background: rgb(135, 165, 230);
+}
+tr, th, td {
+      border: 1px solid rgb(255, 255, 255);
+  }
+
+.note {
+      font-size: 12px;
+  }

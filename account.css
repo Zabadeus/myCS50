@@ -1,0 +1,23 @@
+div {
+  position: center;
+  font-size: 18px;
+}
+div p {
+  color: #2e2e2e;
+}
+div ul {
+  color: #2e2e2e;
+  list-style-type: circle;
+}
+
+.section {
+  background-color: #f7f5f2;
+  padding: 20px;
+  border: 20px;
+}
+
+#Methods, #O-Karma {
+  background-color: #f5f0e4;
+}
+
+/*# sourceMappingURL=karmastyles.css.map */

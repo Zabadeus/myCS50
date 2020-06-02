@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>O - Accounts</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="generalstyle.css">
+        <link rel="stylesheet" href="accountstyle.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md bg-light navbar-light">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">O</a>
+              </div>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="o-concept.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="o-workings.html">How it works</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav navbar-right">
+                <li class="nav-item"><a class="nav-link" href="o-account.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li class="nav-item"><a class="nav-link" href="o-account.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              </ul>
+            </div>
+          </nav>
+      <div class="container"> 
+          <div>
+              <h1>User-Accounts</h1>
+          </div>
+          <div id="Customer" class="section">
+              <h2>Becoming a Customer</h2>
+              <p>Everyone can become a Customer and buy products.<br>
+                For sponsoring new customers and to be able to claim O-Karma-Bonus commissions one needs to verify its identity.<br>
+                Ideally through biometrics by uploading a live photo and one’s passport or ID and enter ID-number.<br>
+                An API can recognize the passports/IDs authenticity and if the photo taken matches the ID.<br>
+                For businesses a business ID.<br>
+                other options:<br>
+                Trough Banks like a SEPA Direct Debit Mandate of which the account owner name is the same as the customers.<br>
+                <br>
+                Possible third party identification via Video-Call.<br>
+                <br>
+              </p>
+          </div>
+          <div id="Creator" class="section">
+              <h2>Becoming a Creator</h2>
+              <h3>Application</h3>
+              One can apply for being a ‘Creator’ (Vendor, Seller) in one’s customer account.<br>
+              <form action="none">
+                  <label for="Business-Type">One has to select the type of business by their size:</label><br>
+                  <select id="Business-Type">
+                      <option value="Private">Private - monthly sales do not cross 500 OC per month - Commission: none</option>
+                      <option value="Tiny">Tiny - monthly sales do not cross 1000 OC per month - Commission: 5%</option>
+                      <option value="Small">Small - monthly sales do not cross 5000 OC per month - Commission: 10%</option>
+                      <option value="Medium-sized">Medium-sized - monthly sales do not cross 10000 OC per month - Commission: 15%</option> 
+                      <option value="Professional">Professional - monthly sales of every other size of company - Commission: 20%</option>
+                  </select><br>
+
+                  If one crosses the threshold of a business-type more then three times in total or two times in a row, one will automatically be put into the next category of business-type.<br>
+                  Private and Tiny Businesses can only put products on Support-, Flea- and Service-Market.<br>
+                  Every Business-Type except ‘Private’ has to fill out an additional registration form.<br>
+                  <br>
+                  The registration form will ask for:<br>
+                  <input type="text" id="Official-Business-Name" placeholder="Official-Business-Name*"><br>
+                  <input type="text" id="Business-Address" placeholder="Address*"><br>
+                  <input type="email" id="Business-Email" placeholder="E-mail*"><br>
+                  <input type="tel" id="Phone-Number" placeholder="Phone-Number*"><br>
+                  (*by default same as customer information)<br>
+                  <br>
+                  <input list="Company-Kind" placeholder="Kind of Company">
+                      <datalist id="Company-Kind">
+                          <option value="Producer">
+                          <option value="Retailer">
+                          <option value="Wholesale or Distributor">
+                          <option value="Coaching and Mentoring">
+                          <option value="Services">
+                          <option value="Digitale Goods">
+                          <option value="Other">
+                      </datalist><br>
+                  <br>
+                  <input list="Official-Type" placeholder="Official*">
+                      <datalist id="Official-Type">
+                          <option value="Aktiengesellschaft (AG)">
+                          <option value="Gesellschaft mit beschränkter Haftung (GmbH)">
+                          <option value="Unternehmergesellschaft (UG)">
+                          <option value="offener Handelsgesellschaft (OHG)">
+                          <option value="Kommanditgesellschaft (KG)">
+                          <option value="Gesellschaft bürgerlichen Rechts (GbR)">
+                          <option value="Einzelunternehmen">
+                          <option value="Stiftung">
+                          <option value="Verein">
+                          <option value="Sonstige">
+                      </datalist>
+                  *Officially registered type of company (only for Germany)"<br>
+                  <br>
+                  Contact person of the company<br>
+                  <br>
+                  <input type="text" id="Business-Contact-Name" placeholder="Name"><br>
+                  <label for="Company-Position">Company position</label>
+                  <select id="Company-Position"><br>
+                      <option value="CEO">CEO</option>
+                      <option value="COO">COO</option>
+                      <option value="Sales Director">Sales Director</option>
+                      <option value="Sales Manager">Sales Manager</option>
+                  </select><br>
+                  
+                  <input type="tel" id="Business-Contact-Phone" placeholder="Phone"><br>
+                  <input type="tel" id="Business-Contact-Mobile" placeholder="Mobile-Phone"><br>
+                  <input type="email" id="Business-Contact-Email" placeholder="E-Mail"><br>
+                  <br>
+                  <button type="submit">SUBMIT</button>
+              </form>
+            -> after applying a verification sms will be sent to contact person mobile-phone-number<br>
+          </div>
+      </div>
+    </body>
+</html>
